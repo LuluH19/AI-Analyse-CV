@@ -1,87 +1,165 @@
-# Welcome to React Router!
+# 🤖 AI Resume Analyser - Resumind
 
-A modern, production-ready template for building full-stack React applications using React Router.
+![Hero](public/readme/hero.webp)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+**Smart feedback for your dream job!** 
 
-## Features
+Resumind est une application web intelligente qui analyse vos CV à l'aide de l'IA pour vous fournir des commentaires détaillés et améliorer vos chances de décrocher l'emploi de vos rêves.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## ✨ Fonctionnalités
 
-## Getting Started
+- **📊 Score ATS** - Évaluation de la compatibilité avec les systèmes de suivi des candidatures (ATS)
+- **🎯 Analyse détaillée** - Feedback IA complet sur le contenu, la structure et l'optimisation
+- **📈 Suggestions d'amélioration** - Recommandations personnalisées pour optimiser votre CV
+- **💾 Historique des analyses** - Suivez vos soumissions et l'évolution de vos CV
+- **🔒 Authentification sécurisée** - Connexion via Puter pour protéger vos données
+- **📱 Design responsive** - Interface moderne et adaptée à tous les appareils
 
-### Installation
+## 🚀 Technologies utilisées
 
-Install the dependencies:
+- **Frontend**: React 19, TypeScript
+- **Routing**: React Router v7
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand
+- **PDF Processing**: PDF.js
+- **File Upload**: React Dropzone
+- **Backend/Storage**: Puter Cloud Services
+- **Build Tool**: Vite
 
-```bash
-npm install
+## 📦 Installation
+
+### Prérequis
+
+- Node.js (version 18 ou supérieure)
+- npm ou yarn
+
+### Étapes d'installation
+
+1. **Cloner le repository**
+   ```bash
+   git clone https://github.com/LuluH19/AI-Analyse-CV.git
+   cd ai-resume-analyser
+   ```
+
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
+
+3. **Configurer l'environnement**
+   - Assurez-vous d'avoir accès aux services Puter Cloud
+   - Aucune configuration d'API key requise (utilise Puter)
+
+4. **Lancer en mode développement**
+   ```bash
+   npm run dev
+   ```
+
+5. **Construire pour la production**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+## 🎯 Utilisation
+
+### 1. Authentification
+- Connectez-vous via l'interface Puter intégrée
+- Votre session sera sauvegardée automatiquement
+
+### 2. Upload de CV
+- Glissez-déposez votre CV (format PDF)
+- Ou cliquez pour sélectionner le fichier
+
+### 3. Analyse IA
+- L'application traite automatiquement votre CV
+- Génère un score ATS et des suggestions
+- Affiche une analyse détaillée avec points forts et améliorations
+
+### 4. Suivi des résultats
+- Consultez l'historique de vos analyses
+- Comparez les versions de votre CV
+- Suivez vos améliorations au fil du temps
+
+## 📁 Structure du projet
+
+```
+ai-resume-analyser/
+├── app/
+│   ├── components/          # Composants React réutilisables
+│   │   ├── ATS.tsx         # Affichage du score ATS
+│   │   ├── FileUploader.tsx # Upload de fichiers
+│   │   ├── ScoreGauge.tsx  # Jauge de score visuelle
+│   │   └── ...
+│   ├── routes/             # Pages de l'application
+│   │   ├── home.tsx        # Page d'accueil
+│   │   ├── upload.tsx      # Page d'upload
+│   │   ├── resume.tsx      # Détails d'analyse
+│   │   └── ...
+│   ├── lib/                # Utilitaires et services
+│   │   ├── puter.ts        # Intégration Puter Cloud
+│   │   ├── pdf2img.ts      # Conversion PDF
+│   │   └── utils.ts
+│   └── root.tsx            # Layout principal
+├── public/                 # Ressources statiques
+│   ├── images/             # Images et illustrations
+│   └── icons/              # Icônes SVG
+└── types/                  # Définitions TypeScript
 ```
 
-### Development
+## 🔧 Scripts disponibles
 
-Start the development server with HMR:
+- `npm run dev` - Lance le serveur de développement
+- `npm run build` - Construit l'application pour la production
+- `npm start` - Lance l'application en production
+- `npm run typecheck` - Vérifie les types TypeScript
 
-```bash
-npm run dev
-```
+## 🎨 Interface utilisateur
 
-Your application will be available at `http://localhost:5173`.
+L'application propose une interface moderne avec :
 
-## Building for Production
+- **Design minimaliste** inspiré des meilleures pratiques UX
+- **Animations fluides** pour une expérience utilisateur agréable
+- **Feedback visuel** avec jauges, badges et graphiques
+- **Navigation intuitive** entre les différentes sections
 
-Create a production build:
+## 🔒 Sécurité et confidentialité
 
-```bash
-npm run build
-```
+- **Authentification sécurisée** via Puter
+- **Stockage chiffré** des données utilisateur
+- **Traitement local** des fichiers PDF
+- **Aucune donnée partagée** avec des tiers
 
-## Deployment
 
-### Docker Deployment
 
-To build and run using Docker:
+## 🤝 Contribution
 
-```bash
-docker build -t my-app .
+Les contributions sont les bienvenues ! Pour contribuer :
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+1. Fork le projet
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
+3. Commitez vos changements (`git commit -m 'Add: Amazing Feature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## 📄 Licence
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
-### DIY Deployment
+## 🙏 Remerciements
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+- [Puter](https://puter.com) - Pour les services cloud et l'authentification
+- [PDF.js](https://mozilla.github.io/pdf.js/) - Pour le traitement des PDF
+- [Tailwind CSS](https://tailwindcss.com) - Pour le framework CSS
+- [React Router](https://reactrouter.com) - Pour le routage
 
 ---
 
-Built with ❤️ using React Router.
+<div align="center">
+  <p>Développé avec ❤️ pour vous aider à décrocher l'emploi de vos rêves</p>
+  <p>
+    <a href="https://github.com/LuluH19/AI-Analyse-CV">⭐ Star le projet</a> • 
+    <a href="https://github.com/LuluH19/AI-Analyse-CV/issues">🐛 Reporter un bug</a> • 
+    <a href="https://github.com/LuluH19/AI-Analyse-CV/discussions">💬 Discussions</a>
+  </p>
+</div>
