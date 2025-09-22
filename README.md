@@ -142,24 +142,11 @@ Les contributions sont les bienvenues ! Pour contribuer :
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
 5. Ouvrez une Pull Request
 
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
 ## 🙏 Remerciements
 
 - [Puter](https://puter.com) - Pour les services cloud et l'authentification
 - [PDF.js](https://mozilla.github.io/pdf.js/) - Pour le traitement des PDF
 - [Tailwind CSS](https://tailwindcss.com) - Pour le framework CSS
 - [React Router](https://reactrouter.com) - Pour le routage
-
+- [JSM](https://github.com/adrianhajdin) - Pour l'inspiration et les tutoriels
 ---
-
-<div align="center">
-  <p>Développé avec ❤️ pour vous aider à décrocher l'emploi de vos rêves</p>
-  <p>
-    <a href="https://github.com/LuluH19/AI-Analyse-CV">⭐ Star le projet</a> • 
-    <a href="https://github.com/LuluH19/AI-Analyse-CV/issues">🐛 Reporter un bug</a> • 
-    <a href="https://github.com/LuluH19/AI-Analyse-CV/discussions">💬 Discussions</a>
-  </p>
-</div>
