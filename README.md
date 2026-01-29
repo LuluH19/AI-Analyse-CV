@@ -30,7 +30,7 @@ Resumind est une application web intelligente qui analyse vos CV à l'aide de l'
 ### Prérequis
 
 - Node.js (version 18 ou supérieure)
-- npm ou yarn
+- npm
 
 ### Étapes d'installation
 
