@@ -148,4 +148,4 @@ Les contributions sont les bienvenues ! Pour contribuer :
 - [Tailwind CSS](https://tailwindcss.com) - Pour le framework CSS
 - [React Router](https://reactrouter.com) - Pour le routage
 - [JSM](https://github.com/adrianhajdin) - Pour l'inspiration et les tutoriels
----
+---trigger release
