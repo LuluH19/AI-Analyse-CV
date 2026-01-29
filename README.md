@@ -13,7 +13,6 @@ Resumind est une application web intelligente qui analyse vos CV à l'aide de l'
 - **📈 Suggestions d'amélioration** - Recommandations personnalisées pour optimiser votre CV
 - **💾 Historique des analyses** - Suivez vos soumissions et l'évolution de vos CV
 - **🔒 Authentification sécurisée** - Connexion via Puter pour protéger vos données
-- **📱 Design responsive** - Interface moderne et adaptée à tous les appareils
 
 ## 🚀 Technologies utilisées
 
